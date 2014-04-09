@@ -1,0 +1,30 @@
+# Lexer
+------
+
+### Tree
+--------
+.  
++ compiler.bat  
++ run.bat  
+./src  
++ Lexer.java  
+./lib  
++ keyword.dic  
++ punctuation.dic  
+./bin
+
+### Needs
+--------
+需要关键字表和运算符和分隔符表，分别对应keyword.dic和punctuation.dic文件
+
+### Useag
+---------
+```java
+    java Lexer keywordfile punctuationfile sourcefile
+```
+### Product
+-----------
+产生三类文件  
+- \*.tklst - 词法分析结果（二元组）  
+- \*.id    - 标示符表  
+- \*.cnt   - 常量表          
